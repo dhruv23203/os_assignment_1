@@ -1,12 +1,16 @@
-Simple ELF Loader
-Overview
-This project presents a straightforward implementation of an ELF (Executable and Linkable Format) loader, developed in C. The loader is designed to parse and load a 32-bit ELF executable file into memory. This implementation provides a clear demonstration of essential tasks, including reading the ELF header, interpreting the program header table, loading program segments into memory, and transferring control to the executable's entry point.
+# Simple ELF Loader
 
-Contributors
-Group ID - 83
-Dhruv Malhan (2023203)
-Aryan Rishi (2023146)
-Prerequisites
-A Unix-based Operating System (e.g., Linux, macOS)
-GCC (GNU Compiler Collection)
-A 32-bit ELF executable file for testing
+## Description
+
+This project implements a simple ELF (Executable and Linkable Format) loader in plain C. The loader parses a 32-bit ELF executable file and loads it into memory.
+This implementation demonstrates the basic process of reading the ELF header, parsing the program header table, loading segments into memory, and transferring control to the entry point of the ELF file.
+
+## Contributors
+### Group ID -  83
+- Dhruv Malhan (2023203)
+- Aryan Rishi (2023146)
+
+## Pre requisites
+- A unix-based Operating System (e.g Linux, Mac-OS, Ubuntu)
+- GCC (GNU Compiler Collection)
+- A 32-bit ELF Executable for testing
