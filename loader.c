@@ -61,7 +61,7 @@ void load_and_run_elf(char** exe) {
             // Map memory for the segment
             void* segment = mmap((void*)phdr[i].p_vaddr, phdr[i].p_memsz,
                                  PROT_READ | PROT_WRITE | PROT_EXEC,
-                                 MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+                                 MAP_PRIVATE | MAP_ANONYMOUS, 0, 0);
             assert(segment != MAP_FAILED && "Failed to map segment");
 
             // Copy segment contents from file to memory
